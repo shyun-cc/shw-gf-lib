@@ -1,0 +1,41 @@
+title: shw-gf-lib · 设计讨论稿
+baseURL: https://shyun-cc.github.io/shw-gf-lib/
+defaultContentLanguage: zh
+hasCJKLanguage: true
+enableRobotsTXT: true
+timeZone: UTC
+languages:
+  zh:
+    label: 简体中文
+    locale: zh-CN
+    weight: 1
+    title: shw-gf-lib · 设计讨论稿
+    hasCJKLanguage: true
+    params:
+      description: 设计讨论稿，业务方案尚未确认，尚未实现。
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+  highlight:
+    noClasses: false
+outputs:
+  home: [HTML, RSS]
+  page: [HTML]
+  section: [HTML, RSS]
+params:
+  offline_search: true
+  copyright:
+    authors: shw-gf-lib contributors
+    from_year: 2026
+  ui:
+    preset: paper
+    dark_mode: true
+    sidebar_menu_foldable: true
+    section_index: cards
+module:
+  imports:
+    - path: github.com/pgsty/oink
+  hugoVersion:
+    extended: true
+    min: 0.168.0
