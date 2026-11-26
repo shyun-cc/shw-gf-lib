@@ -1,6 +1,6 @@
 # shw-gf-lib
 
-[English](./README.md) | [简体中文](./README.zh-CN.md) | 繁體中文
+[简体中文](./README.md) | [English](./README.en.md) | 繁體中文
 
 面向 GoFrame v2 應用的 Go 元件庫，提供 HTTP 響應與中介軟體、會話、Redis 鎖、資料庫遷移、非同步任務、物件儲存，以及常見雲服務和微信 API 的用戶端。
 
