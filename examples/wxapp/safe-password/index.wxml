@@ -1,0 +1,25 @@
+<view>
+  <view>输入后请点键盘“完成”，再提交验证</view>
+  <view wx:if="{{loading}}">正在准备安全输入</view>
+  <input wx:if="{{ready}}"
+    type="safe-password"
+    confirm-type="done"
+    placeholder="请输入数字密码"
+    value="{{inputValue}}"
+    disabled="{{submitting}}"
+    data-nonce="{{challenge.nonce}}"
+    data-generation="{{inputGeneration}}"
+    bindfocus="onEdited"
+    bindinput="onEdited"
+    safe-password-cert-path="{{certPath}}"
+    safe-password-time-stamp="{{challenge.timeStamp}}"
+    safe-password-length="{{passwordLength}}"
+    safe-password-nonce="{{challenge.nonce}}"
+    safe-password-salt="{{challenge.salt}}"
+    safe-password-custom-hash="{{challenge.customHash}}"
+    bindblur="onEncrypted"
+    bindconfirm="onEncrypted" />
+  <view wx:if="{{message}}">{{message}}</view>
+  <button loading="{{submitting}}" disabled="{{!ready || !encryptionReady || submitting}}" bindtap="submit">提交验证</button>
+  <button wx:if="{{!ready}}" disabled="{{loading || submitting}}" bindtap="loadChallenge">重新准备输入</button>
+</view>

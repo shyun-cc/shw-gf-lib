@@ -1,0 +1,15 @@
+{
+    "token": "testToken123",
+    "aesKey": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFG",
+    "corpId": "wx_corp_id_1",
+    "plaintext": "<xml><ToUserName><![CDATA[wx_corp_id_1]]><\/ToUserName><Event><![CDATA[change_contact]]><\/Event><ChangeType><![CDATA[create_user]]><\/ChangeType><UserID><![CDATA[u9]]><\/UserID><\/xml>",
+    "encrypted": "Yi0sTcw4PBuakxGtTT7V9w3EXmTqHzHosOZsq\/mfzteYl9v1oYJZgZxy4uKcVpqlgmaSPDcKSB+yINHQQAUKXCskD\/avw0Mn7OEN5cViYKic5+H250HR7r\/VHXBWQNniAW1AV37HdUbsW3ADplEMjiAw7pKofHdMGn3\/4A\/csSw3lg+kHWe1RLWVn2VjLLK6LpbYCAHJSvUlwVjeG\/V1eO61HvOl8f7SQ2wv2VCblOsPV38NzI0zE7RACbheUuCTeVVG+x8xn4pDeVPoHeXkVdJcxqF0\/D1VmfP9Hrn6hd4=",
+    "timestamp": "1723963200",
+    "nonce": "fixnonce01",
+    "msgSignature": "9a565a7c060302be217b96c2adca7c343ba7fef7",
+    "generatedBy": "php:8.5.9 hyperf-lib WXBizMsgCrypt",
+    "goEncrypted": "6H\/E0CCnJnpz+jwy3IfLcDy8MOrGF0LBW3\/MwakwoBOc7CVCCMXcDEP9fSIL2pFScZW+YYeE1pCemEBEZAKFPalDFbv+ob7lfkEOwOJmRsa1jUz2YErW7JLc3lagfUWr\/R0EG0tSPxlaU98YG7IxBfz4fcwYJkmvmwnBqUEKNmYNrOlz0DidQl9ZkP8oA6cmPC92u9\/HEwLRd5Ua3P18zbmyLDVvIi9\/ZicajRt1bKUpE2GfjKudHHtnVClSloh6qTNy90rZV\/K8amWE1NIai13R2\/Vq43sWLr2LNhJFa2c=",
+    "goPlaintext": "<xml><ToUserName><![CDATA[wx_corp_id_1]]><\/ToUserName><Event><![CDATA[change_contact]]><\/Event><ChangeType><![CDATA[create_user]]><\/ChangeType><UserID><![CDATA[u9]]><\/UserID><\/xml>",
+    "phpDecrypted": "<xml><ToUserName><![CDATA[wx_corp_id_1]]><\/ToUserName><Event><![CDATA[change_contact]]><\/Event><ChangeType><![CDATA[create_user]]><\/ChangeType><UserID><![CDATA[u9]]><\/UserID><\/xml>",
+    "phpVerified": true
+}

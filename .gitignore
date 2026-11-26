@@ -1,0 +1,23 @@
+# Go build and test output
+/bin/
+/dist/
+*.test
+*.prof
+*.cover
+coverage.out
+go.work
+go.work.sum
+
+# Local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/

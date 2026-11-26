@@ -1,0 +1,9 @@
+# cfgsource 单元测试的文件 base 配置（testdata/ 目录，Go 工具链约定不参与包构建）。
+# 键位即测试断言依据：
+#   - database.default.link 为「框架键」（fail-open / SetAdapter 顺序契约断言依据）；
+#   - oss.bucket 为 overlay 覆盖目标（driver 同名键应覆盖此文件值）。
+database:
+  default:
+    link: "pg://user:pass@127.0.0.1:5432/gflib_test"
+oss:
+  bucket: "file-bucket"
